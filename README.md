@@ -44,6 +44,7 @@
 
   <footer>
     &copy; 2025 Tenzin Norphel — Portfolio powered by GitHub Pages
+    My Website: <a href="https://tenz1999.github.io" target="_blank">tenz1999.github.io</a>
   </footer>
 </body>
 </html>
