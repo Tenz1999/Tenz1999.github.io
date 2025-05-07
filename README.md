@@ -1,8 +1,8 @@
-!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
  
-  <title>Tenzin Norphel | Portfolio</title>
+  <title></title>
   <style>
     
      
