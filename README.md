@@ -3,9 +3,7 @@
 <head>
   <title>EE C128: Feedback Control Systems</title>
   <style>
-    body { font-family: Georgia, serif; margin: 2em; line-height: 1.6; }
-    h1, h2 { color: #2a5db0; }
-    .section { margin-bottom: 2em; }
+   
   </style>
 </head>
 <body>
