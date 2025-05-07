@@ -1,56 +1,15 @@
 !DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
   <title>Tenzin Norphel | Portfolio</title>
   <style>
-    body {
-      font-family: Georgia, serif;
-      margin: 0;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
-    nav {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 1em;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 1em;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .tab {
-      display: none;
-      padding: 2em;
-      background: rgba(0, 0, 0, 0.6);
-    }
-    .tab.active {
-      display: block;
-    }
-    footer {
-      text-align: center;
-      padding: 1em;
-      font-size: 0.9em;
-      background: rgba(0, 0, 0, 0.7);
-      color: #ccc;
-    }
+    
+     
   </style>
 </head>
 <body>
-  <nav>
-    <a href="#" onclick="showTab('about')">About</a>
-    <a href="#" onclick="showTab('skills')">Skills</a>
-    <a href="#" onclick="showTab('achievements')">Achievements</a>
-    <a href="#" onclick="showTab('education')">Education</a>
-    <a href="#" onclick="showTab('expertise')">Field Expertise</a>
-  </nav>
+  
 
   <div id="about" class="tab active">
     <h2>About Me</h2>
