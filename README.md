@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EE C128: Feedback Control Systems</title>
-  <style>
-   
-  </style>
+  <title>
+  
 </head>
 <body>
   <h1>ME C134 / EE C128: Feedback Control Systems (Spring 2025)</h1>
