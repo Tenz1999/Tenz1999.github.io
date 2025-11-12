@@ -13,8 +13,10 @@
       color: #fff;
     }
 
+    /* Hero Section */
     .hero {
-      background: url('background_image(website).avif') no-repeat center center fixed;
+      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
+                  url('flat-lay-workstation-with-copy-space-laptop.jpg') no-repeat center center fixed;
       background-size: cover;
       height: 90vh;
       display: flex;
@@ -40,6 +42,7 @@
       border-radius: 8px;
     }
 
+    /* Navigation */
     nav {
       background: rgba(0, 0, 0, 0.9);
       padding: 1em;
@@ -61,6 +64,7 @@
       color: #ffd700;
     }
 
+    /* Tabs */
     .tab {
       display: none;
       padding: 2.5em;
@@ -70,10 +74,16 @@
       width: 90%;
       max-width: 900px;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      animation: fadeIn 0.4s ease-in-out;
     }
 
     .tab.active {
       display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     h2 {
@@ -104,20 +114,20 @@
       color: #000;
     }
 
-    footer {
-      text-align: center;
-      padding: 1.2em;
-      font-size: 0.9em;
-      background: rgba(0, 0, 0, 0.85);
-      color: #ccc;
-    }
-
     iframe {
       width: 100%;
       height: 800px;
       border: none;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.2em;
+      font-size: 0.9em;
+      background: rgba(0, 0, 0, 0.85);
+      color: #ccc;
     }
   </style>
 </head>
