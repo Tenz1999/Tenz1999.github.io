@@ -11,6 +11,7 @@
       margin: 0;
       background: #0b0c10;
       color: #fff;
+      scroll-behavior: smooth;
     }
 
     /* Hero Section */
@@ -31,6 +32,7 @@
     .hero h1 {
       font-size: 3.5em;
       margin-bottom: 0.2em;
+      letter-spacing: 1px;
     }
 
     .hero p {
@@ -88,6 +90,7 @@
 
     h2 {
       color: #ffd700;
+      margin-bottom: 0.5em;
     }
 
     ul, ol {
@@ -116,10 +119,12 @@
 
     iframe {
       width: 100%;
-      height: 800px;
+      height: 850px;
       border: none;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(255,255,255,0.2);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.05);
+      margin-top: 1.5em;
     }
 
     footer {
@@ -148,14 +153,17 @@
     <a href="#" onclick="showTab('cv')">Curriculum Vitae</a>
   </nav>
 
+  <!-- About -->
   <div id="about" class="tab active">
     <h2>About Me</h2>
     <p>I'm Tenzin Norphel, an EECS student at UC Berkeley with experience in ASIC design, PCB hardware systems, and autonomous robotics. My work bridges embedded systems, control theory, and intelligent automation, blending theoretical foundations with real-world engineering.</p>
     <div class="resume-link">
-      <a href="Resume_EE_.pdf" target="_blank">View My Resume (EE + ASIC)</a>
+      <a href="Resume_EE_.pdf" target="_blank">Open Resume (PDF)</a>
     </div>
+    <iframe src="Resume_EE_.pdf"></iframe>
   </div>
 
+  <!-- Skills -->
   <div id="skills" class="tab">
     <h2>Skills</h2>
     <ul>
@@ -166,6 +174,7 @@
     </ul>
   </div>
 
+  <!-- Projects -->
   <div id="projects" class="tab">
     <h2>Highlighted Projects</h2>
     <h3>ASIC Design Engineer — RISC-V CPU</h3>
@@ -174,6 +183,7 @@
     <p>Built a custom multi-layer PCB for a USB MIDI keyboard using KiCad. Implemented grounding, power integrity, and signal testing using oscilloscope debugging and circuit analysis.</p>
   </div>
 
+  <!-- Achievements -->
   <div id="achievements" class="tab">
     <h2>Achievements</h2>
     <ul>
@@ -183,6 +193,7 @@
     </ul>
   </div>
 
+  <!-- Education -->
   <div id="education" class="tab">
     <h2>Education</h2>
     <p><strong>University of California, Berkeley</strong><br>
@@ -190,24 +201,25 @@
       Expected Graduation: December 2025</p>
   </div>
 
+  <!-- Publications -->
   <div id="papers" class="tab">
     <h2>Publications</h2>
     <ol>
       <li>"Visual Servoing using Jointspace Control on Sawyer Arm" — UC Berkeley, 2025. <a href="Project_1.pdf" target="_blank">[PDF]</a></li>
       <li>"Path Planning for a Nonholonomic System using a Unicycle Model Robot" — UC Berkeley, 2025. <a href="EECS106b_Proj2.pdf" target="_blank">[PDF]</a></li>
-      <li>"Adaptive Leader-Follower TurtleBot with Object Avoidance using Dubins Path and CBF-CLF-QP Control" — UC Berkeley, 2025. <a href="Final_Project_Report.pdf" target="_blank">[PDF]</a></li>
+      <li>"Adaptive Leader-Follower TurtleBot with Object Avoidance using Dubins Path and CBF-CLF-QP Control" — UC Berkeley, 2025. <a href="Project_4_Grasping.pdf" target="_blank">[PDF]</a></li>
     </ol>
   </div>
 
- <div id="cv" class="tab">
-  <h2>Curriculum Vitae (Full Academic Version)</h2>
-  <p>This CV provides a comprehensive overview of my academic background, research projects, and technical experience in ASIC, robotics, and embedded systems.</p>
-  <div class="resume-link">
-    <a href="CV_Curriculum_Vitae.pdf" target="_blank">Open Full CV (PDF)</a>
+  <!-- Curriculum Vitae -->
+  <div id="cv" class="tab">
+    <h2>Curriculum Vitae (Full Academic Version)</h2>
+    <p>This CV provides a comprehensive overview of my academic background, research projects, and technical experience in ASIC, robotics, and embedded systems.</p>
+    <div class="resume-link">
+      <a href="CV_Curriculum_Vitae.pdf" target="_blank">Open Full CV (PDF)</a>
+    </div>
+    <iframe src="CV_Curriculum_Vitae.pdf"></iframe>
   </div>
-  <iframe src="CV_Curriculum_Vitae.pdf"></iframe>
-</div>
-
 
   <footer>
     &copy; 2025 Tenzin Norphel — Built with HTML, CSS, and JavaScript | Hosted on GitHub Pages
