@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tenzin Norphel | EECS Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+
+  <!-- Serif Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: 'Tinos', serif;
+      font-family: 'Merriweather', serif;
       margin: 0;
       background: #0b0c10;
       color: #fff;
@@ -91,6 +94,7 @@
     h2 {
       color: #ffd700;
       margin-bottom: 0.5em;
+      text-align: center;
     }
 
     ul, ol {
@@ -136,6 +140,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="hero">
     <h1>Tenzin Norphel</h1>
@@ -177,10 +182,32 @@
   <!-- Projects -->
   <div id="projects" class="tab">
     <h2>Highlighted Projects</h2>
+
     <h3>ASIC Design Engineer — RISC-V CPU</h3>
     <p>Designed a 3-stage pipelined RISC-V CPU with CSR support in Verilog, verified with SystemVerilog testbenches. Integrated cache memory and achieved low-latency performance in Skywater 130nm using Cadence Innovus.</p>
+
     <h3>PCB Design Engineer — Custom MIDI Keyboard</h3>
     <p>Built a custom multi-layer PCB for a USB MIDI keyboard using KiCad. Implemented grounding, power integrity, and signal testing using oscilloscope debugging and circuit analysis.</p>
+
+    <hr>
+
+    <h3>Control System Engineer — Visual Servoing & Grasping Control</h3>
+    <p>Developed PD-based joint-space and torque controllers for a 7-DOF Sawyer arm to track AR tags, tuning controller gains to reduce trajectory error and motion jitter. Designed IK solver and grasp synthesis for Allegro Hand in MuJoCo using Levenberg–Marquardt optimization and force closure metrics.</p>
+
+    <h3>Process Integration Engineer — Microfabrication Technology</h3>
+    <p>Fabricated NMOS devices from bare silicon wafers over a 12-week cleanroom process flow. Performed photolithography, gate oxidation, ion implantation, contact etch, and metal deposition. Characterized resistors, capacitors, MOS capacitors, and long-channel NMOS transistors using 4155B semiconductor analyzer and 4284A LCR meter for I–V and C–V measurements.</p>
+
+    <h3>Robotics System Developer — TurtleBot Path Planning & State Estimation</h3>
+    <p>Built RRT, sinusoidal, and Dubins path planners for a unicycle-model TurtleBot. Implemented Lyapunov-based tracking controller in ROS and applied Kalman Filter (KF) and Extended Kalman Filter (EKF) for state estimation, comparing MSE vs. dead reckoning for navigation accuracy.</p>
+
+    <h3>Semiconductor Device Designer — N-MOSFET Design Project</h3>
+    <p>Utilized Synopsys Sentaurus device simulation software to design an N-channel Si MOSFET with gate length LG = 25 nm (relevant for the 40 nm generation of CMOS technology). Met specified performance requirements within constraints using Sentaurus process and device simulation modules.</p>
+
+    <h3>Robotics Software Engineer — TurtleBot Maze Solver</h3>
+    <p>Developed a Python-based ROS system for TurtleBot 2.0 to autonomously navigate arbitrary mazes. Implemented mapping, layout storage, and traversal logic, integrating ROS topics and services for real-time navigation.</p>
+
+    <h3>CPU Designer — CS61CPU Project</h3>
+    <p>Developed a processor capable of executing RISC-V machine code with instruction fetch, decode, execute, memory access, and write-back stages. Integrated pipelining to enhance throughput, verified functionality with testbench-based simulation, and analyzed performance metrics.</p>
   </div>
 
   <!-- Achievements -->
@@ -213,14 +240,12 @@
 
   <!-- Curriculum Vitae -->
   <div id="cv" class="tab">
-    <h2>Curriculum Vitae (Full Academic Version)</h2>
-    <p>This CV provides a comprehensive overview of my academic background, research projects, and technical experience in ASIC, robotics, and embedded systems.</p>
+    <h2>Curriculum Vitae</h2>
+    <p>This CV provides a comprehensive overview of my academic background, research projects, and technical experience in ASIC, PCB, robotics, and embedded systems.</p>
     <div class="resume-link">
       <a href="CV(Curriculum Vitae).pdf" target="_blank">Open Full CV (PDF)</a>
     </div>
-      <iframe src="CV(Curriculum Vitae).pdf"></iframe>
-
-    
+    <iframe src="CV(Curriculum Vitae).pdf"></iframe>
   </div>
 
   <footer>
@@ -229,9 +254,7 @@
 
   <script>
     function showTab(tabId) {
-      document.querySelectorAll('.tab').forEach(tab => {
-        tab.classList.remove('active');
-      });
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
       document.getElementById(tabId).classList.add('active');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
