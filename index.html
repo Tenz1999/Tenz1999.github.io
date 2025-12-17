@@ -78,18 +78,24 @@
     margin-top: 8px;
   }
   
-  .links a {
+    .links a {
     display: flex;
     align-items: center;
     gap: 6px;
-    color: #0057b7;
+    color: #222;        /* black by default */
     font-weight: 500;
   }
+
+   .links a:hover {
+  color: #000;        /* pure black on hover */
+}
+
+
   
   .links svg {
     width: 18px;
     height: 18px;
-    fill: #555;
+    fill: #0A66C2;
   }
   
   .links a:hover svg {
