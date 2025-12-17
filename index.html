@@ -1,264 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tenzin Norphel | EECS Portfolio</title>
-
-  <!-- Serif Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tenzin Norphel</title>
 
   <style>
     body {
-      font-family: 'Merriweather', serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
       margin: 0;
-      background: #0b0c10;
-      color: #fff;
-      scroll-behavior: smooth;
+      padding: 0;
+      line-height: 1.6;
     }
 
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
-                  url('flat-lay-workstation-with-copy-space-laptop.jpg') no-repeat center center fixed;
-      background-size: cover;
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 0 1.5em;
-    }
-
-    .hero h1 {
-      font-size: 3.5em;
-      margin-bottom: 0.2em;
-      letter-spacing: 1px;
-    }
-
-    .hero p {
-      font-size: 1.1em;
-      max-width: 800px;
-      line-height: 1.5;
-      background: rgba(0, 0, 0, 0.45);
-      padding: 1em;
-      border-radius: 8px;
-    }
-
-    /* Navigation */
-    nav {
-      background: rgba(0, 0, 0, 0.9);
-      padding: 1em;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      color: #f0f0f0;
-      margin: 0 1.2em;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffd700;
-    }
-
-    /* Tabs */
-    .tab {
-      display: none;
-      padding: 2.5em;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 8px;
-      margin: 3em auto;
-      width: 90%;
+    .container {
       max-width: 900px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
-      animation: fadeIn 0.4s ease-in-out;
+      margin: 60px auto;
+      padding: 0 24px;
     }
 
-    .tab.active {
-      display: block;
+    header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 40px;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(15px); }
-      to { opacity: 1; transform: translateY(0); }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin: 0;
     }
 
     h2 {
-      color: #ffd700;
-      margin-bottom: 0.5em;
-      text-align: center;
+      font-size: 1.3em;
+      margin-top: 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
     }
 
-    ul, ol {
-      line-height: 1.7;
-    }
-
-    .resume-link {
-      text-align: center;
-      margin-top: 2em;
-    }
-
-    .resume-link a {
-      background: #ffd700;
-      color: #000;
-      padding: 0.7em 1.5em;
-      border-radius: 5px;
+    a {
+      color: #0057b7;
       text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
     }
 
-    .resume-link a:hover {
-      background: #fff;
-      color: #000;
+    a:hover {
+      text-decoration: underline;
     }
 
-    iframe {
-      width: 100%;
-      height: 850px;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.15);
-      background: rgba(255,255,255,0.05);
-      margin-top: 1.5em;
+    ul {
+      padding-left: 20px;
+    }
+
+    .links a {
+      margin-right: 15px;
     }
 
     footer {
-      text-align: center;
-      padding: 1.2em;
+      margin-top: 60px;
       font-size: 0.9em;
-      background: rgba(0, 0, 0, 0.85);
-      color: #ccc;
+      color: #666;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
-  <div class="hero">
-    <h1>Tenzin Norphel</h1>
-    <p>Undergraduate Student, Electrical Engineering & Computer Sciences, UC Berkeley</p>
-    <p>Hardware-oriented engineer specializing in ASIC design, PCB systems, and robotics. Experienced in RISC-V CPU design, control theory, and microfabrication — integrating hardware with intelligent algorithms for efficient, real-world systems.</p>
-  </div>
+  <div class="container">
 
-  <nav>
-    <a href="#" onclick="showTab('about')">About</a>
-    <a href="#" onclick="showTab('skills')">Skills</a>
-    <a href="#" onclick="showTab('projects')">Projects</a>
-    <a href="#" onclick="showTab('achievements')">Achievements</a>
-    <a href="#" onclick="showTab('education')">Education</a>
-    <a href="#" onclick="showTab('papers')">Publications</a>
-    <a href="#" onclick="showTab('cv')">Portfolio</a>
-  </nav>
+    <!-- Header -->
+    <header>
+      <img src="profile.jpg" alt="Tenzin Norphel">
+      <div>
+        <h1>Tenzin Norphel</h1>
+        <p>
+          EECS Undergraduate, UC Berkeley<br>
+          Hardware & Systems Engineering
+        </p>
+        <div class="links">
+          <a href="mailto:bhudawoe04@gmail.com">Email</a>
+          <a href="https://github.com/yourgithub">GitHub</a>
+          <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a>
+          <a href="Resume_EE_.pdf" target="_blank">Resume (PDF)</a>
+        </div>
+      </div>
+    </header>
 
-  <!-- About -->
-  <div id="about" class="tab active">
-    <h2>About Me</h2>
-    <p>I'm Tenzin Norphel, an EECS student at UC Berkeley with experience in ASIC design, PCB hardware systems, and autonomous robotics. My work bridges embedded systems, control theory, and intelligent automation, blending theoretical foundations with real-world engineering.</p>
-    <div class="resume-link">
-      <a href="Resume_EE_.pdf" target="_blank">Open Resume (PDF)</a>
-    </div>
-    <iframe src="Resume_EE_.pdf"></iframe>
-  </div>
+    <!-- About -->
+    <section>
+      <h2>About</h2>
+      <p>
+        I am an EECS undergraduate at UC Berkeley with interests in ASIC design,
+        computer architecture, robotics, and control systems. My experience
+        includes RISC-V CPU design, RTL development, PCB design, and
+        robotics software using ROS.
+      </p>
+    </section>
 
-  <!-- Skills -->
-  <div id="skills" class="tab">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Hardware:</strong> ASIC Design (Verilog, RTL, Cadence Innovus), PCB Design (KiCad, Altium)</li>
-      <li><strong>Software:</strong> Python, MATLAB, C++, Java, Git</li>
-      <li><strong>Tools:</strong> ROS, Sentaurus, EasyEXPERT, RISC-V Assembly</li>
-      <li><strong>Concepts:</strong> Control Systems, Computer Vision, Signal Processing, Cybersecurity</li>
-    </ul>
-  </div>
+    <!-- Experience / Projects -->
+    <section>
+      <h2>Selected Experience & Projects</h2>
+      <ul>
+        <li>
+          <strong>RISC-V CPU Design (ASIC)</strong> —
+          Designed and verified a pipelined RISC-V processor in Verilog with
+          hazard handling, CSR support, and cache integration.
+        </li>
+        <li>
+          <strong>Microfabrication Technology</strong> —
+          Fabricated NMOS devices through a full cleanroom process flow and
+          characterized devices using I–V and C–V measurements.
+        </li>
+        <li>
+          <strong>Robotics & Control</strong> —
+          Implemented visual servoing and trajectory tracking for a 7-DOF Sawyer arm,
+          and developed path planning and state estimation for TurtleBot.
+        </li>
+        <li>
+          <strong>PCB Design</strong> —
+          Designed a custom multi-layer USB MIDI keyboard PCB using KiCad,
+          focusing on power integrity and signal reliability.
+        </li>
+      </ul>
+    </section>
 
-  <!-- Projects -->
-  <div id="projects" class="tab">
-    <h2>Highlighted Projects</h2>
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <p>
+        <strong>University of California, Berkeley</strong><br>
+        B.S. Electrical Engineering & Computer Sciences<br>
+        Expected Graduation: December 2025
+      </p>
+    </section>
 
-    <h3>ASIC Design Engineer — RISC-V CPU</h3>
-    <p>Designed a 3-stage pipelined RISC-V CPU with CSR support in Verilog, verified with SystemVerilog testbenches. Integrated cache memory and achieved low-latency performance in Skywater 130nm using Cadence Innovus.</p>
+    <!-- Publications -->
+    <section>
+      <h2>Publications</h2>
+      <ul>
+        <li>
+          Visual Servoing using Joint-Space Control on Sawyer Arm (2025)
+        </li>
+        <li>
+          Path Planning for a Nonholonomic Unicycle Model Robot (2025)
+        </li>
+      </ul>
+    </section>
 
-    <h3>PCB Design Engineer — Custom MIDI Keyboard</h3>
-    <p>Built a custom multi-layer PCB for a USB MIDI keyboard using KiCad. Implemented grounding, power integrity, and signal testing using oscilloscope debugging and circuit analysis.</p>
-
-    <hr>
-
-    <h3>Control System Engineer — Visual Servoing & Grasping Control</h3>
-    <p>Developed PD-based joint-space and torque controllers for a 7-DOF Sawyer arm to track AR tags, tuning controller gains to reduce trajectory error and motion jitter. Designed IK solver and grasp synthesis for Allegro Hand in MuJoCo using Levenberg–Marquardt optimization and force closure metrics.</p>
-
-    <h3>Process Integration Engineer — Microfabrication Technology</h3>
-    <p>Fabricated NMOS devices from bare silicon wafers over a 12-week cleanroom process flow. Performed photolithography, gate oxidation, ion implantation, contact etch, and metal deposition. Characterized resistors, capacitors, MOS capacitors, and long-channel NMOS transistors using 4155B semiconductor analyzer and 4284A LCR meter for I–V and C–V measurements.</p>
-
-    <h3>Robotics System Developer — TurtleBot Path Planning & State Estimation</h3>
-    <p>Built RRT, sinusoidal, and Dubins path planners for a unicycle-model TurtleBot. Implemented Lyapunov-based tracking controller in ROS and applied Kalman Filter (KF) and Extended Kalman Filter (EKF) for state estimation, comparing MSE vs. dead reckoning for navigation accuracy.</p>
-
-    <h3>Semiconductor Device Designer — N-MOSFET Design Project</h3>
-    <p>Utilized Synopsys Sentaurus device simulation software to design an N-channel Si MOSFET with gate length LG = 25 nm (relevant for the 40 nm generation of CMOS technology). Met specified performance requirements within constraints using Sentaurus process and device simulation modules.</p>
-
-    <h3>Robotics Software Engineer — TurtleBot Maze Solver</h3>
-    <p>Developed a Python-based ROS system for TurtleBot 2.0 to autonomously navigate arbitrary mazes. Implemented mapping, layout storage, and traversal logic, integrating ROS topics and services for real-time navigation.</p>
-
-    <h3>CPU Designer — CS61CPU Project</h3>
-    <p>Developed a processor capable of executing RISC-V machine code with instruction fetch, decode, execute, memory access, and write-back stages. Integrated pipelining to enhance throughput, verified functionality with testbench-based simulation, and analyzed performance metrics.</p>
-  </div>
-
-  <!-- Achievements -->
-  <div id="achievements" class="tab">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Intern at Custex Inc. (ACE Program @ Berkeley SkyDeck)</li>
-      <li>Developed risk-analysis tools for detecting harmful content with Python & Pandas</li>
-      <li>NASA MCA Project Intern (Control Systems & Robotics)</li>
-    </ul>
-  </div>
-
-  <!-- Education -->
-  <div id="education" class="tab">
-    <h2>Education</h2>
-    <p><strong>University of California, Berkeley</strong><br>
-      B.S. in Electrical Engineering and Computer Sciences<br>
-      Expected Graduation: December 2025</p>
-  </div>
-
-  <!-- Publications -->
-  <div id="papers" class="tab">
-    <h2>Publications</h2>
-    <ol>
-      <li>"Visual Servoing using Jointspace Control on Sawyer Arm" — UC Berkeley, 2025. <a href="Project_1.pdf" target="_blank">[PDF]</a></li>
-      <li>"Path Planning for a Nonholonomic System using a Unicycle Model Robot" — UC Berkeley, 2025. <a href="EECS106b_Proj2.pdf" target="_blank">[PDF]</a></li>
-      <li>"Adaptive Leader-Follower TurtleBot with Object Avoidance using Dubins Path and CBF-CLF-QP Control" — UC Berkeley, 2025. <a href="Project_4_Grasping.pdf" target="_blank">[PDF]</a></li>
-    </ol>
-  </div>
-
-  <!-- Porfolio -->
-  <div id="cv" class="tab">
-    <h2>My Portfolio</h2>
-    <p>This portfolio provides a complete overview of my academic foundation, technical engineering experience, and community engagement. It highlights my work in ASIC design, PCB hands-on experience, robotics, control, and software development, alongside non-technical strengths such as leadership, teamwork, communication, and community service.</p>
-    <div class="resume-link">
-      <a href="Official Portfolio" target="_blank"> Open Full Porfolio (PDF)</a>
-    </div>
-      <iframe src="Official_Portfolio.pdf"></iframe>
+    <footer>
+      © 2025 Tenzin Norphel
+    </footer>
 
   </div>
-
-  <footer>
-    &copy; 2025 Tenzin Norphel — Built with HTML, CSS, and JavaScript | Hosted on GitHub Pages
-  </footer>
-
-  <script>
-    function showTab(tabId) {
-      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-      document.getElementById(tabId).classList.add('active');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
 </body>
 </html>
+
